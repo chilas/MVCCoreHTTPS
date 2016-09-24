@@ -6,12 +6,14 @@
     },
     "Microsoft.AspNetCore.Diagnostics": "1.0.0",
     "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
-    "Microsoft.AspNetCore.Server.Kestrel": "1.0.0",
+    "Microsoft.AspNetCore.Server.Kestrel": "1.0.1",
     "Microsoft.Extensions.Logging.Console": "1.0.0",
     "Microsoft.Extensions.Configuration.EnvironmentVariables": "1.0.0",
     "Microsoft.Extensions.Configuration.FileExtensions": "1.0.0",
     "Microsoft.Extensions.Configuration.Json": "1.0.0",
-    "Microsoft.Extensions.Configuration.CommandLine": "1.0.0"
+    "Microsoft.Extensions.Configuration.CommandLine": "1.0.0",
+    "Microsoft.AspNetcore.Mvc": "1.0.1",
+    "Microsoft.AspNetcore.Server.Kestrel.Https": "1.0.1"
   },
 
   "tools": {
@@ -50,6 +52,6 @@
   },
 
   "tooling": {
-    "defaultNamespace": "CoreMVC"
+    "defaultNamespace": "CoreMvc"
   }
 }
