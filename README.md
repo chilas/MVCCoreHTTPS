@@ -1,2 +1,2 @@
-# CoreMVC-Social-Login
-Using social login for dotnet core mvc application.
+# ASP.NET Core MVC HTTPS
+Demonstrates how to add HTTPS to your asp.net core web application

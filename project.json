@@ -52,6 +52,6 @@
   },
 
   "tooling": {
-    "defaultNamespace": "CoreMvc"
+    "defaultNamespace": "MVCCoreHTTPS"
   }
 }

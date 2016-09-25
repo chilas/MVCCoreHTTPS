@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace CoreMVC
+namespace MVCCoreHTTPS
 {
     class HomeController : Controller
     {
