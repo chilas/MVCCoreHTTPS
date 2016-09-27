@@ -1,4 +1,6 @@
 {
+  "userSecretsId": "aspnet-MVCCoreHTTPS-dc9724d0-8374-4589-a1f4-36b3sa633nd66",
+
   "dependencies": {
     "Microsoft.NETCore.App": {
       "version": "1.0.0",
