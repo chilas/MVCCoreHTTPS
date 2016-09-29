@@ -15,9 +15,6 @@ namespace MVCCoreHTTPS
         public Startup(IHostingEnvironment env)
         {
             certfile = Path.Combine(env.ContentRootPath, "coremvc.pfx");
-            var builder = new ConfigurationBuilder();
-            builder.AddUserSecrets();
-            Configuration = builder.Build();
         }
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
@@ -28,7 +25,7 @@ namespace MVCCoreHTTPS
             services.AddMvcCore();
             services.Configure<KestrelServerOptions>(options =>
             {
-                options.UseHttps(certfile, Configuration["Cert"]);
+                options.UseHttps(certfile,"jollof");
                 options.UseConnectionLogging();
             });
         }
@@ -46,7 +43,7 @@ namespace MVCCoreHTTPS
             app.UseMvcWithDefaultRoute();
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Hello World!");
+                await context.Response.WriteAsync(Configuration["Cert"].ToString());
             });
         }
     }
