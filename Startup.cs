@@ -16,8 +16,6 @@ namespace MVCCoreHTTPS
         {
             certfile = Path.Combine(env.ContentRootPath, "coremvc.pfx");
         }
-        // This method gets called by the runtime. Use this method to add services to the container.
-        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
 
         public IConfiguration Configuration { get; set; }
         public void ConfigureServices(IServiceCollection services)
@@ -30,7 +28,6 @@ namespace MVCCoreHTTPS
             });
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             loggerFactory.AddConsole();
@@ -43,7 +40,7 @@ namespace MVCCoreHTTPS
             app.UseMvcWithDefaultRoute();
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync(Configuration["Cert"].ToString());
+                await context.Response.WriteAsync("Hello World");
             });
         }
     }
